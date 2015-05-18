@@ -12,7 +12,7 @@ Easily provision a multi-workload cluster running Cassandra and Spark with Opsce
 
 ##Provisioning
 
-Clone the project: ```git clone https://github.com/joeljacobson/multi-dc-cluster.git```
+Clone the project: ```git clone https://github.com/joeljacobson/cassandra-multi-dc.git```
 
 In the project directory enter: ```vagrant up```
 
