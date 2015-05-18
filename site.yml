@@ -1,0 +1,21 @@
+- hosts: [ "node1", "node2", "node3" ]
+  user: vagrant
+  sudo: True
+  tasks:
+
+  - include: tasks/dependencies.yml
+  - include: tasks/repositories.yml
+  - include: tasks/java-install.yml
+  - include: tasks/dse-dc1-install.yml
+  - include: tasks/start-dse.yml
+
+- hosts: [ "node4", "node5", "node6" ]
+  user: vagrant
+  sudo: True
+  tasks:
+
+  - include: tasks/dependencies.yml
+  - include: tasks/repositories.yml
+  - include: tasks/java-install.yml
+  - include: tasks/dse-dc2-install.yml
+  - include: tasks/start-dse.yml

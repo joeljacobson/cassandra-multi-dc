@@ -1,0 +1,12 @@
+- name: installing datastax enterprise
+  apt: pkg=dse-full state=installed update-cache=yes
+  register: dse
+
+- name: creating jna symlink
+  shell: ln -s /usr/share/java/jna.jar /usr/share/dse/cassandra/lib || true
+
+- name: configuring datastax enterprise
+  template: src=templates/cassandra.yaml dest=/etc/dse/cassandra/cassandra.yaml
+
+- name: configuring multi-dc
+  template: src=templates/cassandra-topology.properties dest=/etc/dse/cassandra/cassandra-topology.properties

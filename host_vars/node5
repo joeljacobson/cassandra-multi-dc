@@ -1,0 +1,6 @@
+config:
+   cluster_name: 'DSE Cluster'
+   seeds: '192.168.56.10,192.168.56.40'
+   listen_address: 192.168.56.50
+   rpc_address: 192.168.56.50
+   endpoint_snitch: PropertyFileSnitch
