@@ -21,6 +21,7 @@ Your cluster will be ready shortly depending on your internet connection. The in
 DSE and Opscenter will be automatically configured and started once installed. They will also be automatically started each time the VMs are booted.
 
 Cassandra will be running on: ```192.168.56.10```, ```192.168.56.20```, ```192.168.56.30```
+
 Spark will be running on ```192.168.56.40```, ```192.168.56.50```, ```192.168.56.60```
 
 Opscenter will be running on: ```192.168.56.70:8888```
