@@ -2,7 +2,7 @@
 
 Easily provision a multi-workload cluster running Cassandra and Spark with Opscenter using Ansible with Vagrant & Virtualbox.
 
-*Disclaimer* : I use this for demo purposes only on a machine with 16gb ram, I wouldn't run this with any less.
+*Disclaimer* : I use this for demo purposes only, on a machine with 16gb ram, I wouldn't run this with any less.
 
 ##Prerequisites
 
@@ -26,7 +26,7 @@ Spark will be running on ```192.168.56.40```, ```192.168.56.50```, ```192.168.56
 
 Opscenter will be running on: ```192.168.56.70:8888```
 
-Spark UI: ```192.168.56.40:7081``` 
+Spark UI: ```192.168.56.40:7081```
 
 Install the datastax-agents by entering ```vagrant``` for both the username and password.
 
